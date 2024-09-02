@@ -1,0 +1,17 @@
+{
+  "name": "DevContainer",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "additionalVersions": "8,9,10,11",
+      "installMaven": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot-chat"
+      ]
+    }
+  }
+}
